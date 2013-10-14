@@ -10,7 +10,7 @@
       stats: 0,
       fog: 1,
       credits: 1,
-      ws: "ws://" + window.location.host
+      ws: "ws://192.168.1.11:9000"
     };
     wls = window.location.search;
     _ref = wls.substring(1).split('&');
