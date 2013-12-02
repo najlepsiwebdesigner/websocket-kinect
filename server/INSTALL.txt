@@ -53,10 +53,14 @@ sudo pip install autobahn
 sudo pip install twisted
 sudo pip install pyopenssl
 
+
 git clone https://github.com/jawj/websocket-kinect
 cd websocket-kinect
 git clone https://github.com/OpenKinect/libfreenect
 cd libfreenect/wrappers/python
 sudo python setup.py install
 
+to get the python wrappers working:
+sudo apt-get install libopencv-dev
+sudo apt-get install python-opencv
 
