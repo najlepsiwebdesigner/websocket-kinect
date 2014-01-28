@@ -59,6 +59,7 @@ class SendClientFactory(WebSocketClientFactory):
 class BroadcastServerProtocol(WebSocketServerProtocol):
   
   def onOpen(self):
+
     self.factory.register(self)
   
   def connectionLost(self, reason):
@@ -206,7 +207,7 @@ def signalHandler(signum, frame):
   reactor.stop()
 
 func = sys.argv[1] if len(sys.argv) > 1 else 'server'
-url  = sys.argv[2] if len(sys.argv) > 2 else 'ws://localhost:9000'
+url  = sys.argv[2] if len(sys.argv) > 2 else 'ws://localhost:8888'
 
 signal.signal(signal.SIGINT, signalHandler)
 print '>>> %s --- Press Ctrl-C to stop <<<' % url
