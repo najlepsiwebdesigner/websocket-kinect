@@ -13,6 +13,7 @@ sudo pip install cython
 sudo pip install numpy
 sudo pip install autobahn
 
+
 cd /usr/local/Library/Formula
 curl --insecure -O https://raw.github.com/OpenKinect/libfreenect/master/platform/osx/homebrew/libfreenect.rb
 curl --insecure -O https://raw.github.com/OpenKinect/libfreenect/master/platform/osx/homebrew/libusb-freenect.rb
@@ -30,3 +31,36 @@ wget https://github.com/OpenKinect/libfreenect/tarball/master
 tar xvzf master
 cd OpenKinect-libfreenect-bac62d0/wrappers/python
 sudo python setup.py install
+
+
+
+
+
+# ON ARM linux, Cubian for cubieboard (debian wheezy based)
+sudo apt-get install cmake
+sudo apt-get install automake
+sudo apt-get install autoconf
+sudo apt-get install libtool
+sudo apt-get install pkg-config
+sudo apt-get install xz-utils
+sudo apt-get install wget
+sudo apt-get install python-pip
+sudo apt-get install cython
+sudo apt-get install openssl
+sudo pip install pylzma
+sudo pip install numpy
+sudo pip install autobahn
+sudo pip install twisted
+sudo pip install pyopenssl
+
+
+git clone https://github.com/jawj/websocket-kinect
+cd websocket-kinect
+git clone https://github.com/OpenKinect/libfreenect
+cd libfreenect/wrappers/python
+sudo python setup.py install
+
+to get the python wrappers working:
+sudo apt-get install libopencv-dev
+sudo apt-get install python-opencv
+

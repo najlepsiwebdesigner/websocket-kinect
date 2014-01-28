@@ -1,8 +1,4 @@
 (function() {
-
-  // console.log(!new WebSocket('ws://.'));
-
-
   $(function() {
     var animate, bgColour, camT, camYRange, camZ, camZRange, camera, connect, currentOutArrayIdx, dataCallback, doCamPan, doCamZoom, down, drawControl, dvp, dynaPan, fgColour, h, i, inputH, inputW, k, kvp, outArrays, pLen, pMaterial, params, particle, particleSystem, particles, prevOutArrayIdx, projector, pvs, qbl, qbr, qtl, qtr, rawDataLen, renderer, scene, seenKeyFrame, setSize, startCamPan, stats, stopCamPan, sx, sy, togglePlay, useEvery, v, w, wls, x, xc, y, yc, _i, _len, _ref, _ref2, _ref3, _ref4;
     if (!(window.WebGLRenderingContext && document.createElement('canvas').getContext('experimental-webgl') && window.WebSocket && new WebSocket('ws://.').binaryType)) {
